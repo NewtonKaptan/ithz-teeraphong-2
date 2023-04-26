@@ -1,0 +1,12 @@
+input = int(input("Enter number: "))
+vat = 0
+result = 0
+total = 0
+total_by_vat = 0
+for i in range(input):
+    pending_product_price = int(input("Enter the" + str(i + 1) + "item: "))
+    result = result + int(pending_product_price)
+
+vat = result * (70/100)
+total_by_vat = result + vat
+print(total_by_vat)
